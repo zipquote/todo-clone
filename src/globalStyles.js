@@ -20,6 +20,7 @@ export default createGlobalStyle`
     font-family: 'Questrial', sans-serif;
     font-size: 1.5rem;
     height: 100%;
+    color: #34373d;
   }
 
   #root {

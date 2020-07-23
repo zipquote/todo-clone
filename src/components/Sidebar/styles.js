@@ -11,8 +11,11 @@ export const SidebarWrapper = styled.aside`
 `;
 
 export const SidebarContent = styled.div`
-  padding: 0 10px 0 10px;
   margin: 10px 0 10px 0;
+`;
+
+export const ToggleSidebarContainer = styled.div`
+  padding: 0 10px 0 10px;
 `;
 
 export const ToggleSidebarButton = styled(IconButton)`
