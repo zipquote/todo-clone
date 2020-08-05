@@ -5,11 +5,15 @@ export const SidebarNavWrapper = styled.nav`
   overflow-y: auto;
 `;
 
-export const SidebarNavList = styled.ul`
+type SidebarNavListProps = {
+  isOpen: boolean;
+};
+
+export const SidebarNavList = styled.ul<SidebarNavListProps>`
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  width: ${(props) => (props.isOpen ? 200 : 30)}px;
+  width: ${({ isOpen }) => (isOpen ? 200 : 30)}px;
   overflow: hidden;
   margin: 8px 0 0 0;
   padding-left: 0;

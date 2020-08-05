@@ -1,9 +1,13 @@
 import React from "react";
 import { ACTIONS_LIST } from "../../constants";
 import { SidebarNavWrapper, SidebarNavList } from "./styles";
-import { SidebarNavAction } from "../";
+import { SidebarNavAction } from "..";
 
-const SidebarNav = ({ isSidebarOpen }) => {
+export interface SidebarNavProps {
+  isSidebarOpen: boolean;
+}
+
+const SidebarNav: React.FC<SidebarNavProps> = ({ isSidebarOpen }) => {
   return (
     <SidebarNavWrapper>
       <SidebarNavList isOpen={isSidebarOpen}>

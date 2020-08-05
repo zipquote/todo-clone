@@ -7,7 +7,19 @@ import {
   SidebarNavActionCount,
 } from "./styles";
 
-const SidebarNavAction = ({ icon, title, count, iconClassNames }) => {
+export interface SidebarNavActionProps {
+  icon: string;
+  title: string;
+  count: number;
+  iconClassNames: any;
+}
+
+const SidebarNavAction: React.FC<SidebarNavActionProps> = ({
+  icon,
+  title,
+  count,
+  iconClassNames,
+}) => {
   return (
     <SidebarNavActionWrapper>
       <FontIcon iconName={icon} className={classNames(iconClassNames)} />
