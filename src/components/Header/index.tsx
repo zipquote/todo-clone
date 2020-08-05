@@ -1,7 +1,9 @@
 import React from "react";
 import { HeaderWrapper, Brand } from "./styles";
 
-const Header = () => {
+export interface HeaderProps {}
+
+const Header: React.FC<HeaderProps> = () => {
   return (
     <HeaderWrapper>
       <Brand>To Do</Brand>

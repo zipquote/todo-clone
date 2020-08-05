@@ -2,7 +2,9 @@ import React from "react";
 import { Sidebar, TaskArea, TaskDetails } from "../";
 import { MainAppWrapper } from "./styles";
 
-const Main = () => {
+export interface MainProps {}
+
+const Main: React.FC<MainProps> = () => {
   return (
     <MainAppWrapper>
       <Sidebar />
